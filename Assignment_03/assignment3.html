@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>Registration</title>
+</head>
+
+<body>
+    <form action="server.jsp" method="post">
+        <center>
+            <table style="text-align: left;height: 50%;width: 50%;">
+                <thead style="text-align: center;">
+                    <tr>
+                        <td colspan="3" style="font-size: larger;">
+                            <b>
+                                <u>Registration Form</u>
+                            </b>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="11">
+                            <img src="sunbeam.jpeg" alt="photo" style="align-items: right;" />
+                        </td>
+                        <td>Name: </td>
+                        <td>
+                            <input type="text" placeholder="Enter Name" name="myname" style="width: 100%;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Birth Date: </td>
+                        <td>
+                            <input type="date" name="DOB" style="width: 100%;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td>
+                            <input type="email" name="myname" placeholder="Enter Your Email-Id" style="width: 100%;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password: </td>
+                        <td>
+                            <input type="password" name="mypassword" placeholder="Enter Pasword" style="width: 100%;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td colspan="2">
+                            <table border="1" style="height: 100%;width: 100%; text-align: center">
+                                <tr>
+                                    <td>
+                                        <select name="myState" style="width: 100%;">
+                                            <option value="1"> M.H</option>
+                                            <option value="2"> M.P</option>
+                                            <option value="3"> GUJ</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="distict" style="width: 100%;">
+                                            <option value="10">Pune</option>
+                                            <option value="20">Indore</option>
+                                            <option value="30">Ahamadbad</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="city" style="width: 100%;">
+                                            <option value="11">Pune</option>
+                                            <option value="22">Hatod</option>
+                                            <option value="33">Asarwa</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>State</td>
+                                    <td>Distict</td>
+                                    <td>City</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender">Male
+                            <input type="radio" name="gender">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Upload Photo</td>
+                        <td>
+                            <input type="file" name="myphoto">
+                            <!-- <input type="text" name="myphoto" placeholder="Browse your photo"> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select your Course </td>
+                        <td>
+                            <select name="mycourse" placeholder="select Course" style="width: 100%;">
+                                <option>select Course</option>
+                                <option>DAC</option>
+                                <option>DMC</option>
+                                <option>DBDA</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Register" />
+                        </td>
+                        <td>
+                            <input type="reset" value="Clear" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </form>
+</body>
+</html>
